@@ -17,8 +17,7 @@
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  display: inline-block;
 }
 
 .logo_place_header {
