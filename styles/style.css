@@ -9,7 +9,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-div, header, section {
+div, section {
   border: 1px solid red;
 }
 
@@ -17,7 +17,7 @@ div, header, section {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /*display: flex;*/
+  display: flex;
   position: relative;
   align-items: center;
   background-color: #f2f2f2;
@@ -30,8 +30,6 @@ div, header, section {
 
 .logo_place_header {
   position: absolute;
-  /*display: flex;*/
-  /*justify-content: flex-start;*/
   width: 183px;
   height: 32px;
   top: 30px;
@@ -44,11 +42,8 @@ div, header, section {
   line-height: 96px;
   font-size: 102px;
   font-weight: 700;
-  display: flex;
-
-  /*position: relative;
-
-  justify-content: left;*/
+  position: relative;
+  z-index: 2;
   left: 64px;
 }
 
@@ -60,20 +55,62 @@ div, header, section {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 2;
 }
 
 .header__link {
-
+  text-decoration: none;
 }
 
 .header__main-illustration {
-
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+}
+
+.description {
+  margin-top: 100px;
+}
+
+.two-columns {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.two-columns__brief {
+  width: 175px;
+  position: relative;
+  top: 0;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px
+}
+
+.two-columns__paragraph {
+
+}
+
+.two-columns__paragraph_text_bold {
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
