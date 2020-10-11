@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 .header {
@@ -24,11 +24,11 @@
 
 .logo {
   display: inline-block;
+  width: 183px;
 }
 
 .logo_place_header {
   position: absolute;
-  width: 183px;
   height: 32px;
   top: 30px;
   left: 64px;
@@ -94,6 +94,7 @@
 .two-columns__brief {
   width: 175px;
   position: relative;
+  margin: 0;
   color: #2f80ed;
   font-size: 18px;
   line-height: 1.2;
@@ -115,14 +116,14 @@
   margin: 0 0 30px 0;
 }
 
-.two-columns__paragraph:last-of-type {
+.two-columns__paragraph:last-child {
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
   margin: 0;
 }
 
-.two-columns__paragraph_text_bold {
+.two-columns__span-accent {
   font-size: 24px;
   line-height: 34px;
   font-weight: bold;
@@ -171,7 +172,7 @@
 }
 
 .table__text {
-  line-height: 1.12;
+  line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin: 20px 0 0;
@@ -273,48 +274,43 @@
 }
 
 .footer {
-
   padding-top: 60px;
   padding-bottom: 40px;
   background-color:  #1f1f1f;
   min-height: 350px;
   display: flex;
+  justify-content: center;
   box-sizing: border-box;
-
 }
 
 .footer__columns {
   display: flex;
   width: 90%;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
   margin-left: 0;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
 .logo_place_footer {
   background-image: url('../images/logo_place_footer.svg');
-  width: 183px;
   height: 35px;
-
 }
 
 .footer__author {
+  width: fit-content;
   color: white;
-  position: absolute;
-  bottom: 18px;
-  margin-top: 18px;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
-
-.footer__column_content_info {
-  margin: 0 auto;
- }
 
  .footer__column-heading {
   color: white;
@@ -343,24 +339,10 @@
   position: relative;
  }
 
- .footer__social-list {
-  list-style: none;
-  text-align: left;
-  padding-inline-start: 0px;
-  margin: 20px 0 16px 0;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-}
-
  .footer__social-icon {
   margin-right: 10px;
   height: 16px;
   width: 16px;
  }
 
-.footer__social-link {
-  color: white;
-  text-decoration: none;
-}
 
